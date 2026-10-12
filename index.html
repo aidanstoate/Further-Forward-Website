@@ -135,10 +135,9 @@ section { padding: var(--space-6) 0; }
 .cover-strip { display: flex; height: 112px; }
 .cover-strip > div { height: 100%; position: relative; }
 .cs-green { flex: 360 1 0; background: var(--green-700); }
-.cs-navy  { flex: 240 1 0; background: var(--navy-700); display: flex; align-items: center; justify-content: center; }
+.cs-navy  { flex: 240 1 0; background: var(--navy-700); }
 .cs-teal  { flex: 64 1 0; background: var(--teal-600); }
 .cs-tint  { flex: 296 1 0; background: var(--green-100); overflow: hidden; display: flex; align-items: center; justify-content: center; }
-.cs-navy svg { width: 108px; height: 20px; fill: var(--on-brand); }
 .plus-grid { display: grid; grid-template-columns: repeat(6, 40px); grid-auto-rows: 40px; }
 .plus-grid span { position: relative; }
 .plus-grid span::before, .plus-grid span::after { content: ""; position: absolute; background: var(--heading); }
@@ -154,7 +153,6 @@ section { padding: var(--space-6) 0; }
 
 @media (max-width: 720px) {
   .cover-strip { height: 72px; }
-  .cs-navy svg { width: 72px; }
   .plus-grid { grid-template-columns: repeat(3, 40px); grid-auto-rows: 36px; }
   .plus-grid span:nth-child(n+7) { display: none; }
   .hero-name { font-size: 44px; }
@@ -269,9 +267,7 @@ section { padding: var(--space-6) 0; }
   <section class="hero" id="top" aria-labelledby="hero-name">
     <div class="cover-strip" aria-hidden="true">
       <div class="cs-green"></div>
-      <div class="cs-navy">
-        <svg viewBox="0 0 108 20"><rect x="0" y="8" width="88" height="4"/><polygon points="84,0 108,10 84,20"/></svg>
-      </div>
+      <div class="cs-navy"></div>
       <div class="cs-teal"></div>
       <div class="cs-tint"><div class="plus-grid"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
     </div>
